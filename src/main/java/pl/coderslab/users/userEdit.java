@@ -1,4 +1,4 @@
-package pl.coderslab.servlets;
+package pl.coderslab.users;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "userShow", urlPatterns = "/user/show")
-public class userShow extends HttpServlet {
+@WebServlet(name = "userEdit", urlPatterns = "/user/edit")
+public class userEdit extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
