@@ -8,17 +8,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Workshop3 - List</title>
+    <title>UserCRUD - List</title>
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
 
-    <style rel="stylesheet">
-        <%@include file="/theme/css/sb-admin-2.min.css" %>
-    </style>
-    <style type="text/css" rel="stylesheet">
-        <%@include file="/theme/vendor/fontawesome-free/css/all.min.css" %>
-    </style>
+
+    <link href="<c:url value="/theme/css/sb-admin-2.css"/>" rel="stylesheet">
+
+
+    <link href="<c:url value="/theme/vendor/fontawesome-free/css/all.min.css"/>" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
 </head>
 <body>
@@ -50,7 +50,9 @@
                             <td>${user.getId()}</td>
                             <td>${user.getUserName()}</td>
                             <td>${user.getEmail()}</td>
-                            <td><a href="/user/delete?id=${user.getId()}">Usuń </a><a href="/user/edit?id=${user.getId()}">Edit </a><a href="/user/show?id=${user.getId()}">Pokaż</a> </td>
+                            <td><a href="/user/delete?id=${user.getId()}">Usuń </a><a
+                                    href="/user/edit?id=${user.getId()}">Edit </a><a
+                                    href="/user/show?id=${user.getId()}">Pokaż</a></td>
                         </tr>
                     </c:forEach>
                     </tbody>
@@ -58,6 +60,6 @@
                 </table>
             </div>
         </div>
-        <%@include file="/META-INF/fragments/footer.jsp"%>
+        <%@include file="/META-INF/fragments/footer.jsp" %>
 </body>
 </html>

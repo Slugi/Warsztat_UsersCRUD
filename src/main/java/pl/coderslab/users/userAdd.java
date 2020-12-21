@@ -9,12 +9,11 @@ import java.io.IOException;
 
 @WebServlet(name = "userAdd", urlPatterns = "/user/add")
 public class userAdd extends HttpServlet {
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+  @Override
+  protected void doPost(HttpServletRequest req, HttpServletResponse res)
+      throws ServletException, IOException {}
 
-    }
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-
-    }
+  @Override
+  protected void doGet(HttpServletRequest req, HttpServletResponse res)
+      throws ServletException, IOException {}
 }
