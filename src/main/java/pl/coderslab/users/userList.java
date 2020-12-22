@@ -15,6 +15,9 @@ public class userList extends HttpServlet {
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
+    req.setCharacterEncoding("UTF-8");
+    resp.setContentType("text/html");
+    resp.setCharacterEncoding("UTF-8");
     UserDao userDao = new UserDao();
     req.setAttribute("users", userDao.findAll());
 
