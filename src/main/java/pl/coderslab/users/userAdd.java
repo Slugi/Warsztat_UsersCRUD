@@ -20,8 +20,8 @@ public class userAdd extends HttpServlet {
     resp.setCharacterEncoding("UTF-8");
     User user = new User();
     user.setUserName(req.getParameter("userName"));
-    user.setEmail(req.getParameter("email"));
-    user.setPassword(req.getParameter("password"));
+    user.setEmail(req.getParameter("userEmail"));
+    user.setPassword(req.getParameter("userPassword"));
     UserDao userDao = new UserDao();
     userDao.create(user);
     resp.sendRedirect(req.getContextPath() + "/user/list");
