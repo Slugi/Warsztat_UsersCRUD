@@ -19,14 +19,16 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="/user/list">
+            <a class="nav-link" href="/user/add">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Lista użytkowników</span></a>
+                <span>Dodawanie użytkowników</span></a>
         </li>
 
         <!-- Sidebar Toggler (Sidebar) -->
         <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            <a href="/user/list">
+            <button class="rounded-circle border-0" id="sidebarToggle" ></button>
+            </a>
         </div>
 
     </ul>
